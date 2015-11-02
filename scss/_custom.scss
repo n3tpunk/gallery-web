@@ -28,5 +28,8 @@ body {
 		div.gallery-container {
 			@include block-grid(1);
 		}
+		div.press-image {
+			padding: 5px;
+		}
 	}
 }
