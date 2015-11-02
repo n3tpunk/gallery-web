@@ -2,3 +2,6 @@
 /.sass-cache/*
 *.DS_Store
 /stylesheets/*
+/.idea/
+.eslintrc
+/node_modules/

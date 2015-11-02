@@ -1,0 +1,21 @@
+body {
+	div.lang-bar {
+		font-size: 10px;
+    	padding-top: 10px;
+    	padding-bottom: 5px;
+		a {
+			color: #777;
+		}
+	}
+	div.menu-container {
+		nav.top-bar {
+			ul.dropdown {
+				border: 1px solid #666;
+				li {
+					a {	line-height: 22px; }
+				}
+				li.divider { border-color: #aaa;}
+			}
+		}
+	}
+}

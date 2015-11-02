@@ -1,0 +1,22 @@
+{
+  "name": "miljenko-horvat",
+  "version": "1.0.0",
+  "description": "Website for Miljenko Horvat",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/n3tpunk/gallery-web.git"
+  },
+  "author": "Marin Marusic <marin@netpunk.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/n3tpunk/gallery-web/issues"
+  },
+  "homepage": "https://github.com/n3tpunk/gallery-web#readme",
+  "dependencies": {
+    "eslint": "^1.7.3"
+  }
+}
