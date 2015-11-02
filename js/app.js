@@ -3,3 +3,11 @@
 /*eslint-env browser,mocha */
 /*global $*/
 $(document).foundation();
+$(document).ready(function () {
+    "use strict";
+    
+    $('.thumbs li a').click(function(e){
+      e.preventDefault();
+      $('.gallery-container').empty().append($("<img>",{src:this.href}));
+    });
+});
