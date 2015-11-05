@@ -1,16 +1,36 @@
 body {
-	text-align: justify;
+    // general styles
+    img.p-compat-right {
+        float: right;
+        margin: 0 0 10px 10px;
+    }
+    img.p-compat-left {
+        float: left;
+        margin: 0 10px 10px 0;
+    }
+    .clearfix {
+        overflow: auto;
+    }
+    text-align: justify;
     text-align-last: left;
-	div.lang-bar {
+
+    // end general styles
+    div.lang-bar {
 		font-size: 10px;
     	padding-top: 10px;
     	padding-bottom: 5px;
 		a {
+            font-family: 'Questrial', sans-serif;
 			color: #777;
 		}
 	}
 	div.menu-container {
 		nav.top-bar {
+            a {
+                font-family: 'Rambla', monospace;
+                font-weight: 700;
+                font-variant: small-caps;
+            }
 			ul.dropdown {
 				border: 1px solid #666;
 				li {
@@ -22,6 +42,10 @@ body {
 	}
 	div.content-container {
 		padding-top: 30px;
+        a, p, span {
+            font-family: 'Questrial', 'sans-serif';
+            font-size: 14px;
+        }
 		div.thumbs-container {
 			ul.thumbs {
 				@include block-grid(2);
