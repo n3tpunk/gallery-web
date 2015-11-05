@@ -91,14 +91,7 @@ body {
             @include grid-column($columns: 9, $offset: 3);
         }
         div.press-content, div.cat-content {
-            padding-left: 8%;
-            @include flexbox((
-                display: flex,
-                flex-direction: row,
-                align-items: right,
-                justify-items: center,
-                justify-content: center
-              ));
+            padding-left: 14px;
             div.press-links,div.cat-links {
                 margin-left: -10px;
                 text-align: center;
