@@ -16,12 +16,18 @@ body {
 
     // end general styles
     div.lang-bar {
+        @include grid-column(12);
 		font-size: 14px;
     	padding-top: 10px;
     	padding-bottom: 5px;
-		a {
+		span {
             font-family: 'Questrial', sans-serif;
 			color: #777;
+            float: right;
+            font-kerning: normal;
+            a {
+                color: $jet;
+            }
 		}
 	}
 	div.menu-container {
@@ -65,11 +71,50 @@ body {
             font-family: 'Questrial', 'sans-serif';
             font-size: 14px;
         }
-        div.front-sidebar {
+        div.sidebar-content {
             @include grid-column(3);
         }
-        div.front-main {
+        div.main-content {
             @include grid-column(9);
+        }
+        div.caption {
+            @include grid-column(12);
+            @include flexbox((
+                display: flex,
+                flex-direction: row,
+                align-items: center,
+                justify-content: center
+              ));
+        }
+        div.main-content.frontpage {
+            @include grid-column($columns: 9, $offset: 3);
+        }
+        div.press-content, div.cat-content {
+            padding-left: 8%;
+            @include flexbox((
+                display: flex,
+                flex-direction: row,
+                align-items: right,
+                justify-items: center,
+                justify-content: center
+              ));
+            div.press-links,div.cat-links {
+                margin-left: -10px;
+                text-align: center;
+                h5 {
+                    margin-left:18px;
+                }
+                ul {
+                    list-style: none;
+                    li {
+                        font-size: 14px;
+                        a {
+                            padding-left: 10px;
+                            color: $jet;
+                        }
+                    }
+                }
+            }
         }
 		div.thumbs-container {
 			ul.thumbs {
