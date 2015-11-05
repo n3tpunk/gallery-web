@@ -67,16 +67,17 @@ body {
 	}
 	div.content-container {
 		padding-top: 30px;
-        a, p, span {
+        a, p, span, li, h1, h2, h3, h4, h5, label, input, textarea {
             font-family: 'Questrial', 'sans-serif';
+        }
+        a, p, span, li, i {
             font-size: 14px;
         }
-        div.sidebar-content {
-            @include grid-column(3);
+        ul.vcard {
+            border-radius: 5px;
         }
-        div.main-content {
-            @include grid-column(9);
-        }
+        div.contact-sidebar {}
+        div.contact-content {}
         div.caption {
             @include grid-column(12);
             @include flexbox((

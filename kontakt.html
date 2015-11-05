@@ -50,26 +50,37 @@
     </nav>
   </div>
   <div class="row content-container">
-    <div id="contact-us" class="small-8 small-offset-2 medium-8 medium-offset-2 large-8 large-offset-2 columns">
-      <form name="contact" method="post" data-abide>
+        <div class="small-12 medium-3 large-3 columns contact-sidebar">
+            <div>
+             <h5>Contact Info</h5>
+             <ul class="vcard">
+               <li class="fn">Miljenko Horvat</li>
+               <li class="street-address">Adresa 123.</li>
+               <li class="locality">Zagreb</li>
+               <li><span class="state">ZZ</span>, <span class="zip">10000</span></li>
+               <li class="email"><a href="#">m.horvat@example.com</a></li>
+             </ul>
+            </div>
+        </div>
+        <div class="small-12 medium-9 large-9 columns contact-content">
+            <form name="contact" method="post" data-abide>
+                <h5>Send me a message</h5>
+                <label>Name</label>
+                <small class="error">Your full name is required.</small>
+                <input type="text" placeholder="Full Name" required>
 
-        <h5>Contact Us</h5>
-        <label>Name</label>
-        <small class="error">Your full name is required.</small>
-        <input type="text" placeholder="Full Name" required>
+                <label>Email</label>
+                <small class="error">An email address is required.</small>
 
-        <label>Email</label>
-        <small class="error">An email address is required.</small>
+                <input type="email" placeholder="username@address.com" required>
 
-        <input type="email" placeholder="username@address.com" required>
+                <label>Your Message</label>
+                <small class="error">Your message is required.</small>
+                <textarea rows=8 placeholder="Enter your message here" required></textarea>
 
-        <label>Your Message</label>
-        <small class="error">Your message is required.</small>
-        <textarea rows=8 placeholder="Enter your message here" required></textarea>
-
-        <input type="submit" class="button small secondary" value="Send Message"></button></a>
-      </form>
-    </div><!--end 8 columns-->
+                <input type="submit" class="button small secondary" value="Send Message"></button></a>
+          </form>
+        </div>
   </div>
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/foundation/js/foundation.min.js"></script>
