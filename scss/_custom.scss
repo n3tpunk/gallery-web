@@ -16,7 +16,7 @@ body {
 
     // end general styles
     div.lang-bar {
-		font-size: 10px;
+		font-size: 14px;
     	padding-top: 10px;
     	padding-bottom: 5px;
 		a {
@@ -29,13 +29,32 @@ body {
             a {
                 font-family: 'Rambla', monospace;
                 font-weight: 700;
-                font-variant: small-caps;
+            }
+            ul.title-area {
+                li.name {
+                    h1 {
+                        font-size: 20px;
+                    }
+                }
+            }
+            ul.right {
+                a {
+                    font-size: 16px;
+                }
             }
 			ul.dropdown {
 				border: 1px solid #666;
 				li {
-					a {	line-height: 22px; }
+                    padding: 3px 0 3px 0;
+					a {
+                        font-size: 14px;
+                        font-weight: 300;
+                        line-height: 22px;
+                    }
 				}
+                li:first-child {
+                    a { padding-top: 10px;}
+                }
 				li.divider { border-color: #aaa;}
 			}
 		}
@@ -45,6 +64,12 @@ body {
         a, p, span {
             font-family: 'Questrial', 'sans-serif';
             font-size: 14px;
+        }
+        div.front-sidebar {
+            @include grid-column(3);
+        }
+        div.front-main {
+            @include grid-column(9);
         }
 		div.thumbs-container {
 			ul.thumbs {
