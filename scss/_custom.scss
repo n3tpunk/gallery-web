@@ -48,14 +48,29 @@ body {
         }
 		div.thumbs-container {
 			ul.thumbs {
-				@include block-grid(2);
+				@include block-grid(4);
 			}
 		}
 		div.gallery-container {
 			@include block-grid(1);
+            div.img-caption {
+                display: none;
+                top: -20px;
+                background: shade($jet, 50%);
+                background-opacity: 70%;
+                padding: 5px 0 5px 0;
+                p { margin: 5px; color: rgba(255, 255, 255, 0.7); }
+            }
 		}
 		div.press-image {
 			padding: 5px;
 		}
+        ul.side-nav {
+            li {
+                a, a:active, a:hover {
+                    color: $jet;
+                }
+            }
+        }
 	}
 }
