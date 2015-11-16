@@ -18,5 +18,8 @@
   "homepage": "https://github.com/n3tpunk/gallery-web#readme",
   "dependencies": {
     "eslint": "^1.7.3"
+  },
+  "devDependencies": {
+    "sass-lint": "^1.3.2"
   }
 }

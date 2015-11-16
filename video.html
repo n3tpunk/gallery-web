@@ -6,6 +6,14 @@
   <title>MILJENKO HORVAT</title>
   <link rel="stylesheet" href="stylesheets/app.css" />
   <script src="bower_components/modernizr/modernizr.js"></script>
+  <style>
+  #vplayer {
+    visibility: visible;
+  }
+  #aplayer {
+    visibility: hidden;
+  }
+  </style>
 </head>
 <body>
     <div class="row lang-bar-container">
@@ -50,7 +58,22 @@
     </nav>
   </div>
   <div class="row content-container">
-
+      <div class="large-3 medium-3 small-4 columns video-nav">
+        <ul class="side-nav">
+              <li><a href="#" onclick="toggleVideo()">Video</a></li>
+              <li><a href="#" onclick="toggleAudio()">Audio</a></li>
+        </ul>
+      </div>
+      <div class="large-9 medium-9 small-8 columns media-content">
+        <div id="vplayer" class="media-players video">
+          <div class="flex-video widescreen vimeo">
+            <iframe src="http://player.vimeo.com/video/60122989" width="400" height="225" frameborder="0" allowFullScreen></iframe>
+          </div>
+        </div>
+        <div id="aplayer" class="media-players audio">
+            <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/230634548&amp;color=ff9900&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false"></iframe>
+        </div>
+      </div>
   </div>
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/foundation/js/foundation.min.js"></script>
