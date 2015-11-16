@@ -18,8 +18,7 @@ body {
   div.lang-bar {
     @include grid-column(12);
     font-size: 14px;
-    padding-top: 10px;
-    padding-bottom: 5px;
+    padding-top: 10px!important;
     span {
       font-family: 'Questrial', sans-serif;
       color: #777;
@@ -66,7 +65,8 @@ body {
     }
   }
   div.content-container {
-    padding-top: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     a, p, span, li, h1, h2, h3, h4, h5, label, input, textarea {
       font-family: 'Questrial', 'sans-serif';
     }
