@@ -118,7 +118,6 @@ body {
     div.gallery-container {
       @include block-grid(1);
       div.img-caption {
-        display: none;
         top: -20px;
         background: shade($jet, 50%);
         background-opacity: 70%;

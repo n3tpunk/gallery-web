@@ -8,7 +8,7 @@ $(document).ready(function () {
     
     $('.thumbs li a').click(function(e){
       e.preventDefault();
-      $('.gallery-container').empty().append($("<img>",{src:this.href}));
+      $('.gallery-container img').replaceWith($("<img>",{src:this.href}));
     });
 });
 
