@@ -1,147 +1,150 @@
-body {
-  // general styles
-  img.p-compat-right {
-    float: right;
-    margin: 0 0 10px 10px;
-  }
-  img.p-compat-left {
-    float: left;
-    margin: 0 10px 10px 0;
-  }
-  .clearfix {
-    overflow: auto;
-  }
-  text-align: justify;
-  text-align-last: left;
-
-  // end general styles
-  div.lang-bar {
-    @include grid-column(12);
-    font-size: 14px;
-    padding-top: 10px!important;
-    span {
-      font-family: 'Questrial', sans-serif;
-      color: #777;
+html {
+  body {
+    img.p-compat-right {
       float: right;
-      font-kerning: normal;
-      a {
-        color: $jet;
-      }
+      margin: 0 0 10px 10px;
     }
-  }
-  div.menu-container {
-    nav.top-bar {
-      a {
-        font-family: 'Rambla', monospace;
-        font-weight: 700;
-      }
-      ul.title-area {
-        li.name {
-          h1 {
-            font-size: 20px;
-          }
-        }
-      }
-      ul.right {
-        a {
-          font-size: 16px;
-        }
-      }
-      ul.dropdown {
-        border: 1px solid #666;
-        li {
-          padding: 3px 0 3px 0;
-          a {
-            font-size: 14px;
-            font-weight: 300;
-            line-height: 22px;
-          }
-        }
-        li:first-child {
-          a { padding-top: 10px;}
-        }
-        li.divider { border-color: #aaa;}
-      }
+    img.p-compat-left {
+      float: left;
+      margin: 0 10px 10px 0;
     }
-  }
-  div.content-container {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    a, p, span, li, h1, h2, h3, h4, h5, label, input, textarea {
-      font-family: 'Questrial', 'sans-serif';
+    .clearfix {
+      overflow: auto;
     }
-    a, p, span, li, i {
-      font-size: 14px;
-    }
-    ul.vcard {
-      border-radius: 5px;
-    }
-    div.contact-sidebar {}
-    div.contact-content {}
-    div.caption {
+    text-align: justify;
+    text-align-last: left;
+
+    div.lang-bar {
       @include grid-column(12);
-      @include flexbox((
-        display: flex,
-        flex-direction: row,
-        align-items: center,
-        justify-content: center
-        ));
-    }
-    div.main-content.frontpage {
-      @include grid-column($columns: 9, $offset: 3);
-    }
-    div.press-content, div.cat-content {
-      padding-left: 14px;
-      div.press-links,div.cat-links {
-        margin-left: -10px;
-        text-align: center;
-        h5 {
-          margin-left:18px;
+      font-size: 14px;
+      padding-top: 10px!important;
+      span {
+        font-family: 'Questrial', sans-serif;
+        color: #777;
+        float: right;
+        font-kerning: normal;
+        a {
+          color: $jet;
         }
-        ul {
-          list-style: none;
+      }
+    }
+
+    div.menu-container {
+      nav.top-bar {
+        a {
+          font-family: 'Rambla', monospace;
+          font-weight: 700;
+        }
+        ul.title-area {
+          li.name {
+            h1 {
+              font-size: 20px;
+            }
+          }
+        }
+        ul.right {
+          a {
+            font-size: 16px;
+          }
+        }
+        ul.dropdown {
+          border: 1px solid #666;
           li {
-            font-size: 14px;
+            padding: 3px 0 3px 0;
             a {
-              padding-left: 10px;
-              color: $jet;
+              font-size: 14px;
+              font-weight: 300;
+              line-height: 22px;
+            }
+          }
+          li:first-child {
+            a { padding-top: 10px;}
+          }
+          li.divider { border-color: #aaa;}
+        }
+      }
+    }
+    // content
+    div.content-container {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      a, p, span, li, h1, h2, h3, h4, h5, label, input, textarea {
+        font-family: 'Questrial', 'sans-serif';
+      }
+      a, p, span, li, i {
+        font-size: 14px;
+      }
+      ul.vcard {
+        border-radius: 5px;
+      }
+      div.contact-sidebar {}
+      div.contact-content {}
+      div.caption {
+        @include grid-column(12);
+        @include flexbox((
+          display: flex,
+          flex-direction: row,
+          align-items: center,
+          justify-content: center
+          ));
+      }
+      div.main-content.frontpage {
+        @include grid-column($columns: 9, $offset: 3);
+      }
+      div.press-content, div.cat-content {
+        padding-left: 14px;
+        div.press-links,div.cat-links {
+          margin-left: -10px;
+          text-align: center;
+          h5 {
+            margin-left:18px;
+          }
+          ul {
+            list-style: none;
+            li {
+              font-size: 14px;
+              a {
+                padding-left: 10px;
+                color: $jet;
+              }
             }
           }
         }
       }
-    }
-    div.thumbs-container {
-      ul.thumbs {
-        @include block-grid(4);
-      }
-    }
-    div.gallery-container {
-      @include block-grid(1);
-      div.img-caption {
-        top: -20px;
-        background: shade($jet, 50%);
-        background-opacity: 70%;
-        padding: 5px 0 5px 0;
-        p { margin: 5px; color: rgba(255, 255, 255, 0.7); }
-      }
-    }
-    div.press-image {
-      padding: 5px;
-    }
-    ul.side-nav {
-      li {
-        padding-bottom: 3px;
-        border: 1px solid transparent;
-        a, a:active, a:hover {
-          color: $jet;
+      div.thumbs-container {
+        ul.thumbs {
+          @include block-grid(4);
         }
       }
-      li:active,li:hover {
-        background-color: #ddd;
-        border-radius: 3px;
-        border: 1px solid transparent;
-        a { color: $jet; }
+      div.gallery-container {
+        @include block-grid(1);
+        div.img-caption {
+          top: -20px;
+          background: shade($jet, 50%);
+          background-opacity: 70%;
+          padding: 5px 0 5px 0;
+          p { margin: 5px; color: rgba(255, 255, 255, 0.7); }
+        }
+      }
+      div.press-image {
+        padding: 5px;
+      }
+      ul.side-nav {
+        li {
+          padding-bottom: 3px;
+          border: 1px solid transparent;
+          a, a:active, a:hover {
+            color: $jet;
+          }
+        }
+        li:active,li:hover {
+          background-color: #ddd;
+          border-radius: 3px;
+          border: 1px solid transparent;
+          a { color: $jet; }
+        }
       }
     }
   }
+  // end content
 }
