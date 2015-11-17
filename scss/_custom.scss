@@ -89,7 +89,8 @@ html {
           ));
       }
       div.main-content.frontpage {
-        @include grid-column($columns: 9, $offset: 3);
+        @include grid-column($columns: 9, $push: 3);
+        padding-left: 22px;
       }
       div.press-content, div.cat-content {
         padding-left: 14px;
@@ -113,11 +114,12 @@ html {
       }
       div.thumbs-container {
         ul.thumbs {
-          @include block-grid(4);
+          @include block-grid(3);
         }
       }
       div.gallery-container {
         @include block-grid(1);
+        padding-left: 10px;
         div.img-caption {
           top: -20px;
           background: shade($jet, 50%);
